@@ -1,7 +1,11 @@
 package main
 
+var secret = ""
+func setSecret(sec string){
+	secret = sec
+}
+
 func guess(number string) string {
-	secret := "1234"
 	result := ""
 	for i := 0; i < len(number); i++ {
 		for j := 0; j < len(secret); j++ {
