@@ -14,6 +14,10 @@ func main() {
 	}
 	router := gin.Default()
 
+	router.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, "<h1> Integración con CodeShip. By: Marcela Santos <h1>")
+	})
+
 	router.GET("/codebreaker/setup/:number", func(c *gin.Context) {
 		number := c.Param("number")
 		setSecret(number)
