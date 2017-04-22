@@ -1,4 +1,4 @@
-package CodeBreaker
+package main
 
 func guess(number string) string {
 	secret := "1234"
