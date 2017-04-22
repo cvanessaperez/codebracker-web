@@ -13,7 +13,7 @@ func TestAllX(t *testing.T) {
 func TestNot(t *testing.T) {
 	setSecret("1234")
 	expected := ""
-	actual := guess("5678")
+	actual := guess("5671")
 	if actual != expected {
 		t.Errorf("Test failed, expected: '%s', got: '%s'", expected, actual)
 	}
