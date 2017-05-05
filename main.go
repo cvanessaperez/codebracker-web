@@ -15,7 +15,7 @@ func main() {
 	router := gin.Default()
 
 	router.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, " Integración con CodeShip. By: Marcela Santos ")
+		c.String(http.StatusOK, " Integración con CodeShip, Por: Vanessa Pérez")
 	})
 
 	router.GET("/codebreaker/setup/:number", func(c *gin.Context) {
